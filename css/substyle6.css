@@ -1,0 +1,273 @@
+@charset "utf-8";
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+*{margin: 0; padding: 0;}
+ul, ol{list-style: none;}
+a{text-decoration: none; color: inherit;}
+img, iframe, video{vertical-align: middle;}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+body{
+    font-family: 'NanumSquare';
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    font-weight: bold;
+    min-width:1450px;
+}
+
+#wrap{
+    width: 100%;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+}
+
+/* header */
+#header{
+    border-bottom: 1px solid #f7d922;
+}
+.top{
+    width: 1320px;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+}
+.top h1 a img{
+    width: 60px;
+}
+
+/* membership */
+#membership{}
+.member_join{
+    width: 420px;
+    margin: 0 auto;
+}
+h2{
+    padding: 40px 0;
+    color: #f7d922;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.member_join>p>label{
+    display: block;
+    text-align: left;
+    font-size: 12px;
+    width: 400px;
+    margin: auto;
+    font-weight: normal;
+    color: #d0d0d0;
+    line-height: 12px;
+}
+.member_join>p>input{
+    width: 420px;
+    border: none;
+    background: none;
+    outline-style: none;
+    border-bottom: 1px solid #f7d922;
+    padding: 10px;
+    padding-top: 5px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+input::placeholder {
+    color: #d0d0d0;
+    font-weight: normal;
+    font-size: 13px;
+}
+.select_box{
+    width: 420px;
+}
+.btn_select{
+    text-align: left;
+    width: 100%;
+    outline-style: none;
+    background: none;
+    color: #d0d0d0;
+    border: none;
+    border-bottom: 1px solid #f7d922;
+    width: 420px;
+    padding: 10px;
+    cursor: pointer;
+    height: 39px;
+    position: relative;
+}
+.list li>button{
+    width: 100%;
+    padding: 8px 20px;
+    text-align: left;
+    background: none;
+    border: none;
+    color: #d0d0d0;
+    cursor: pointer;
+    border-bottom: 1px solid #f7d922;
+}
+.list li:nth-child(6)>button{
+    border-bottom: 0;
+}
+.list{
+    width: 420px;
+    border: 1px solid #f7d922;
+    background-color: rgba(0,0,0,0.3);
+    box-sizing: border-box;
+    border-top: none;
+    display: none;
+}
+.btn_select::after{
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-top: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+    display: inline-block;
+    position: absolute;
+    transform: rotate(135deg);
+    right: 10px;
+    top: 15px;
+}
+.turn::after{
+    transform:rotate(315deg);
+    top: 15px;
+}    
+.telephone{
+    margin-top: 20px;
+}
+.chk_box{
+    width: 420px;
+}
+#check_box, #check_box2, #check_box3, #check_box4{
+    display: none;
+}
+.chk_box>label{
+    font-size: 12px;
+    font-weight: nomal;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.chk_box>p{
+    width: 420px;
+    position: relative;
+    margin-top: 5px;
+}
+input#check_box + label::before{
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    vertical-align: middle;
+    background-image: url(../images/check.png);
+    background-size: cover;
+    margin-right: 5px;
+    margin-top: -1px;
+}
+input#check_box2:checked + label::before{
+    content: '';
+    background-image: url(../images/select.png);
+}
+input#check_box2 + label::before{
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    vertical-align: middle;
+    background-image: url(../images/check.png);
+    background-size: cover;
+    margin-right: 5px;
+    margin-top: -1px;
+}
+input#check_box:checked + label::before{
+    content: '';
+    background-image: url(../images/select.png);
+}
+input#check_box3 + label::before{
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    vertical-align: middle;
+    background-image: url(../images/check.png);
+    background-size: cover;
+    margin-right: 5px;
+    margin-top: -1px;
+}
+input#check_box3:checked + label::before{
+    content: '';
+    background-image: url(../images/select.png);
+}
+input#check_box4 + label::before{
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    vertical-align: middle;
+    background-image: url(../images/check.png);
+    background-size: cover;
+    margin-right: 5px;
+    margin-top: -1px;
+}
+input#check_box4:checked + label::before{
+    content: '';
+    background-image: url(../images/select.png);
+}
+.chk_box>p:nth-child(1){
+    width: 420px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #f7d922;
+}
+.chk_box>p>label{
+    color: #fff;
+    font-size: 13px;
+    font-weight: normal;
+    padding: 0 25px;
+    box-sizing: border-box;
+    line-height: 30px;
+    cursor: pointer;
+    line-height: 30px;
+}
+.chk_box>p:nth-child(1)>label{
+    width: 420px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px;
+}
+.join{
+    width: 420px;
+    background-color: #f7d922;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: 'NanumSquare';
+}
+.chk_box>p:nth-child(2):after{
+    display: inline-block;
+    content: '약관 보기';
+    font-size: 10px;
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    cursor: pointer;
+}
+.chk_box>p:nth-child(4):after{
+    display: inline-block;
+    content: '내용 보기';
+    font-size: 10px;
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    cursor: pointer;
+}

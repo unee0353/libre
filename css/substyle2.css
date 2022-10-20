@@ -1,0 +1,593 @@
+@charset "utf-8";
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+*{margin: 0; padding: 0;}
+ul, ol{list-style: none;}
+a{text-decoration: none; color: inherit;}
+img, iframe, video{vertical-align: middle;}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+body{
+    font-family: 'NanumSquare';
+    font-size: 20px;
+    line-height: 24px;
+    color: #000;
+    font-weight: bold;
+    min-width:1450px;
+}
+.section h2{
+    font-size: 20px;
+    font-weight: bolder;
+    padding-bottom: 25px;
+    padding-top: 125px;
+}
+
+/* header */
+#header{
+    border-bottom: 1px solid #009267;
+    padding: 25px 0;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 50;
+}
+.top{    
+    width: 1320px;
+    margin: 0 auto;
+}
+.top h1{
+    float: left;
+    margin-right: 35px;
+}
+.top h1 img{
+    width: 70px;
+}
+.top .l_gnb{
+    float: left;
+    margin-top: 6px;
+}
+.top .l_gnb li{
+    float: left;
+    margin-right: 43px;
+}
+.top .r_gnb{
+    float: right;
+    margin-top: 5px;
+}
+.top .r_gnb li{
+    float: left;
+    margin-left: 40px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* section */
+#section .section{
+    width:100%;
+    height:600px;
+    position:relative;
+    text-align: center;
+}
+#section .section1{
+    color: #f9de24;
+    background-image: url(../images/section1.jpg);
+    background-position: top center;
+    background-size: cover;
+}
+#section .section>.fp-tableCell>h3{
+    font-size: 30px;
+    font-weight: bolder;
+}
+#section .section>.fp-tableCell>p{
+    font-size: 20px;
+    margin-top: 22px;
+}
+#section .section1>.fp-tableCell>img{
+    width: 100px;
+    margin-bottom: 67px;
+}
+#section .section>.fp-tableCell .arrow{
+    width: 30px;
+    margin-left: -20px;
+    animation:arrowAni 0.5s;
+	animation-fill-mode:forwards;
+	animation-iteration-count: infinite;
+	animation-direction: alternate; 
+	position:absolute;
+}
+@keyframes arrowAni{
+	0%{bottom:0%} 
+	100%{bottom:2%;} 
+}
+
+#section .section2{
+    color: #000;
+    background-image: url(../images/section2.jpg);
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+}
+#section .section2>.fp-tableCell>h3{
+    margin-top: -300px;
+    line-height: 35px;
+}
+#section .section2>.fp-tableCell>img{
+    width: 1000px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#section .section3{
+    background-color: #f9f9f9;
+}
+#section .section3>.fp-tableCell>h3{
+    margin-top: -300px;
+    line-height: 35px;
+}
+#section .section3>.fp-tableCell>video{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#section .section4{
+    background-color: #f9de24;
+    position: relative;
+}
+#section .section4>.fp-tableCell>h3{
+    margin-top: -300px;
+    line-height: 35px;
+}
+#section .section4>.fp-tableCell>video{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 262px;
+    height: 600px;
+    border-radius: 20px;
+}
+#section .section4>.fp-tableCell>img{
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#section .section5{
+    position: relative;
+}
+#section .section5>.fp-tableCell>h3{
+    margin-top: -300px;
+    line-height: 35px;
+}
+#section .section5>.fp-tableCell>img{
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#section .section6{
+    background-image: url(../images/section5bg.jpg);
+}
+#section .section6>.fp-tableCell>h3{
+    padding-top: 200px;
+    line-height: 35px;
+    padding-bottom: 130px;
+}
+.section .title{
+    width: 800px;
+    background-color: #fff;
+    margin: auto;
+    padding: 30px;
+    text-align: left;
+    border-radius: 20px;
+    box-sizing: border-box;
+    font-weight: bolder;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+.section6 .title .question .plus{
+    float: right;
+    margin-top: 4px;
+}
+.section6 .title .answer{
+    display: none;
+    text-align: left;
+    margin-top: 30px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    font-size: 16px;
+    border-top: 1px solid #009267;
+    font-weight: normal;
+}
+
+/*+모양 회전관련 속성. 요부분은 반드시 복사해서 가져가세요~*/
+.turn .question img{transform:rotate(45deg);}
+.plus{transition:transform 0.5s;}
+
+/* footer */
+#footer{
+    background-color: #333;
+    color: #ebebeb;
+    font-size: 12px;
+    text-align: left;
+}
+.footer_inner{
+    width: 1320px;
+    margin: 0 auto;
+    padding: 70px 0;
+    position: relative;
+}
+.copyright h4{
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+#footer>.section7>.copyright{
+    float: left;
+}
+.l_gnb{
+    height: 24px;
+}
+.l_gnb>li{
+    float: left;
+    margin-right: 20px;
+}
+.sns{
+    float: right;
+}
+.copyright>p>button{
+    border: none;
+    color: #ebebeb;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px 20px 5px 0;
+    background-color: #333;
+}
+.copyright>p>button>span{
+    position: relative;
+}
+.copyright>p>button>span::after{
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+    display: inline-block;
+    transform: rotate(135deg);
+    position: absolute;
+    top: 2px;
+    left: 5px;
+}
+.sns{
+    position: absolute;
+    right: 0;
+    top: 70px;
+}
+.sns>li{
+    float: left;
+    font-size: 15px;
+    margin-left: 20px;
+}
+.hidden{
+    display: none;
+    text-align: left;
+}
+
+.turn>span::after{
+    transform:rotate(315deg);
+    top: 4px;
+}
+
+.copyright>p{
+    text-align: left;
+}
+
+#fp-nav{
+    display: none;
+}@charset "utf-8";
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+*{margin: 0; padding: 0;}
+ul, ol{list-style: none;}
+a{text-decoration: none; color: inherit;}
+img, iframe, video{vertical-align: middle;}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+body{
+    font-family: 'NanumSquare';
+    font-size: 20px;
+    line-height: 24px;
+    color: #000;
+    font-weight: bold;
+    min-width:1450px;
+}
+.section h2{
+    font-size: 20px;
+    font-weight: bolder;
+    padding-bottom: 25px;
+    padding-top: 125px;
+}
+
+/* header */
+#header{
+    border-bottom: 1px solid #009267;
+    padding: 25px 0;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 50;
+}
+.top{    
+    width: 1320px;
+    margin: 0 auto;
+}
+.top h1{
+    float: left;
+    margin-right: 35px;
+}
+.top h1 img{
+    width: 70px;
+}
+.top .l_gnb{
+    float: left;
+    margin-top: 6px;
+}
+.top .l_gnb li{
+    float: left;
+    margin-right: 43px;
+}
+.top .r_gnb{
+    float: right;
+    margin-top: 5px;
+}
+.top .r_gnb li{
+    float: left;
+    margin-left: 40px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* section */
+#section .section{
+    width:100%;
+    height:600px;
+    position:relative;
+    text-align: center;
+}
+#section .section1{
+    color: #f9de24;
+    background-image: url(../images/section1.jpg);
+    background-position: top center;
+    background-size: cover;
+}
+#section .section>.fp-tableCell>h3{
+    font-size: 30px;
+    font-weight: bolder;
+}
+#section .section>.fp-tableCell>p{
+    font-size: 20px;
+    margin-top: 22px;
+}
+#section .section1>.fp-tableCell>img{
+    width: 100px;
+    margin-bottom: 67px;
+}
+#section .section>.fp-tableCell .arrow{
+    width: 30px;
+    margin-left: -20px;
+    animation:arrowAni 0.5s;
+	animation-fill-mode:forwards;
+	animation-iteration-count: infinite;
+	animation-direction: alternate; 
+	position:absolute;
+}
+@keyframes arrowAni{
+	0%{bottom:0%} 
+	100%{bottom:2%;} 
+}
+
+#section .section2{
+    color: #000;
+    background-image: url(../images/section2.jpg);
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+}
+#section .section2>.fp-tableCell>h3{
+    margin-top: -300px;
+    line-height: 35px;
+}
+#section .section2>.fp-tableCell>img{
+    width: 1000px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#section .section3{
+    background-color: #f9f9f9;
+}
+#section .section3>.fp-tableCell>h3{
+    margin-top: -300px;
+    line-height: 35px;
+}
+#section .section3>.fp-tableCell>video{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#section .section4{
+    background-color: #f9de24;
+    position: relative;
+}
+#section .section4>.fp-tableCell>h3{
+    margin-top: -300px;
+    line-height: 35px;
+}
+#section .section4>.fp-tableCell>video{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 262px;
+    height: 600px;
+    border-radius: 20px;
+}
+#section .section4>.fp-tableCell>img{
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#section .section5{
+    position: relative;
+}
+#section .section5>.fp-tableCell>h3{
+    margin-top: -300px;
+    line-height: 35px;
+}
+#section .section5>.fp-tableCell>img{
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#section .section6{
+    background-image: url(../images/section5bg.jpg);
+}
+#section .section6>.fp-tableCell>h3{
+    padding-top: 70px;
+    line-height: 35px;
+    padding-bottom: 70px;
+}
+.section .title{
+    width: 800px;
+    background-color: #fff;
+    margin: auto;
+    padding: 30px;
+    text-align: left;
+    border-radius: 20px;
+    box-sizing: border-box;
+    font-weight: bolder;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+.section6 .title .question .plus{
+    float: right;
+    margin-top: 4px;
+}
+.section6 .title .answer{
+    display: none;
+    text-align: left;
+    margin-top: 30px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    font-size: 16px;
+    border-top: 1px solid #009267;
+    font-weight: normal;
+}
+
+/*+모양 회전관련 속성. 요부분은 반드시 복사해서 가져가세요~*/
+.turn .question img{transform:rotate(45deg);}
+.plus{transition:transform 0.5s;}
+
+/* footer */
+#footer{
+    background-color: #333;
+    color: #ebebeb;
+    font-size: 12px;
+    text-align: left;
+}
+.footer_inner{
+    width: 1320px;
+    margin: 0 auto;
+    padding: 70px 0;
+    position: relative;
+}
+.copyright h4{
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+#footer>.section7>.copyright{
+    float: left;
+}
+.l_gnb{
+    height: 24px;
+}
+.l_gnb>li{
+    float: left;
+    margin-right: 20px;
+}
+.sns{
+    float: right;
+}
+.copyright>p>button{
+    border: none;
+    color: #ebebeb;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px 20px 5px 0;
+    background-color: #333;
+}
+.copyright>p>button>span{
+    position: relative;
+}
+.copyright>p>button>span::after{
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+    display: inline-block;
+    transform: rotate(135deg);
+    position: absolute;
+    top: 2px;
+    left: 5px;
+}
+.sns{
+    position: absolute;
+    right: 0;
+    top: 70px;
+}
+.sns>li{
+    float: left;
+    font-size: 15px;
+    margin-left: 20px;
+}
+.hidden{
+    display: none;
+    text-align: left;
+}
+
+.copyright>p>.turn>span::after{
+    transform:rotate(315deg);
+    top: 4px;
+}
+
+.copyright>p{
+    text-align: left;
+}
+
+#fp-nav{
+    display: none;
+}
