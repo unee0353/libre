@@ -443,7 +443,7 @@ body{
 }
 #section .section4>.fp-tableCell>video{
     position: absolute;
-    bottom: 0;
+    bottom: 29px;
     left: 50%;
     transform: translateX(-50%);
     width: 262px;
@@ -453,7 +453,7 @@ body{
 #section .section4>.fp-tableCell>img{
     position: absolute;
     z-index: 3;
-    bottom: 0;
+    bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
 }
